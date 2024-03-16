@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> 
+
+        var escolha = parseInt(prompt("Informe a figura plana: Retangulo = 1 | Quadrado = 2 | Losango = 3 | Trapézio = 4 | Paralelogramo = 5 | Triângulo = 6 | Círculo = 7"));
+        
+        switch(escolha){
+        
+        // Retangulo
+
+        case 1:   
+        var base = parseFloat(prompt("Informe a base:"));
+        var altura = parseFloat(prompt("Informe a altura:"));
+        var resultado = (base * altura);
+
+            document.write("o resultado é: " + resultado);
+        break;
+
+        // Quadrado
+        
+        case 2:
+        
+        var lado = parseFloat(prompt("Informe o lado do Quadrado:"));
+        var resultado = (lado * lado);
+
+            document.write("o resultado é: " + resultado);
+        break;
+        
+        // Losango    
+
+        case 3: 
+
+        var diagonalMaior = parseFloat(prompt("Informe a diagonal Maior:"));
+        var diagonalMenor = parseFloat(prompt("Informe a diagonal Menor:"));
+        var resultado = (diagonalMaior * diagonalMenor) / 2;
+
+            document.write("O Resultado é: " + resultado)
+        break;
+            
+        // Trapézio
+        
+        case 4:    
+
+        var baseMaior = parseFloat(prompt("digite a base MAIOR:"));
+        var baseMenor = parseFloat(prompt("digite a base MENOR:"));
+        var h = parseFloat(prompt("adicione a ALTURA:"));
+        var resultado = ((baseMaior + baseMenor) * h) /2;
+            
+            document.write("O resultado é: " + resultado);
+        break;
+        
+        // Paralelogramo
+        
+        case 5:
+        
+        var base = parseFloat(prompt("Informe a base"));
+        var altura = parseFloat(prompt("Qual é Altura"));
+        var resultado = (base * altura);
+
+            document.write("o resultado é: " + resultado)
+        break;
+        
+        //  TRIANGULO
+        
+        case 6:
+        
+        var base = parseFloat(prompt("Digite a base:"));
+        var altura = parseFloat(prompt("Digite a altura"));
+        var triangulo = base * altura /2;
+
+            document.write("a área do triangulo é " + triangulo)
+        break;
+        
+        // Circulo 
+        
+        case 7:
+
+        var pi = 3.14;
+        var raio = parseFloat(prompt("Adicione o raio:"));
+        var circulo = raio * raio * pi; 
+
+            document.write("O resultado é: " + circulo);
+        break; 
+
+        }
+
+    </script>
+    
+</body>
+</html>
